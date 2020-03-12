@@ -1,0 +1,26 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $color-beige;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: $color-grey-light-1;
+  font-family: 'Kaushan Script', cursive;
+  display: flex;
+  flex-direction: column;
+
+  margin: 4rem;
+
+  &--main {
+    font-size: 10rem;
+    text-transform: uppercase;
+  }
+
+  &--sub {
+    font-size: 5rem;
+    text-align: right;
+  }
+}

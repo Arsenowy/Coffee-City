@@ -21,6 +21,26 @@ body {
   box-sizing: border-box;
   padding: 3rem; }
 
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #eee2ce;
+  line-height: 1.7; }
+
+.heading-primary {
+  color: #faf9f9;
+  font-family: 'Kaushan Script', cursive;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem; }
+  .heading-primary--main {
+    font-size: 10rem;
+    text-transform: uppercase; }
+  .heading-primary--sub {
+    font-size: 5rem;
+    text-align: right; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -47,3 +67,15 @@ body {
 
 .u-margin-top-xsmall {
   margin-top: 1rem !important; }
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(to bottom, rgba(113, 73, 45, 0.5), rgba(81, 45, 31, 0.5)), url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0); }
+  .header__text-box {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
