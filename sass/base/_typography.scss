@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   font-weight: 400;
   font-size: 1.6rem;
   color: $color-beige;
@@ -22,5 +22,26 @@ body {
   &--sub {
     font-size: 5rem;
     text-align: right;
+  }
+}
+
+.heading-secondary {
+  display: flex;
+  flex-direction: column;
+
+  &--main {
+    color: $color-primary-dark;
+    text-align: center;
+    margin: 4rem;
+    font-size: 7rem;
+    font-weight: 700;
+  }
+
+  &--sub {
+    color: $color-primary-dark;
+    text-align: center;
+    margin: 1rem 20rem;
+    font-size: 3rem;
+    font-weight: 300;
   }
 }

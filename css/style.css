@@ -22,7 +22,7 @@ body {
   padding: 3rem; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   font-weight: 400;
   font-size: 1.6rem;
   color: #eee2ce;
@@ -40,6 +40,22 @@ body {
   .heading-primary--sub {
     font-size: 5rem;
     text-align: right; }
+
+.heading-secondary {
+  display: flex;
+  flex-direction: column; }
+  .heading-secondary--main {
+    color: #512d1f;
+    text-align: center;
+    margin: 4rem;
+    font-size: 7rem;
+    font-weight: 700; }
+  .heading-secondary--sub {
+    color: #512d1f;
+    text-align: center;
+    margin: 1rem 20rem;
+    font-size: 3rem;
+    font-weight: 300; }
 
 .u-center-text {
   text-align: center !important; }
@@ -68,14 +84,34 @@ body {
 .u-margin-top-xsmall {
   margin-top: 1rem !important; }
 
+.our-coffee__about {
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.our-coffee__logo {
+  width: 20rem;
+  height: 20rem;
+  opacity: 0.7; }
+
+.our-coffee .heading-secondary {
+  opacity: 0.9; }
+
 .header {
-  height: 85vh;
-  background-image: linear-gradient(to bottom, rgba(113, 73, 45, 0.5), rgba(81, 45, 31, 0.5)), url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
+  height: 80vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(to bottom, rgba(81, 45, 31, 0.7), rgba(113, 73, 45, 0.6)), url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
   background-size: cover;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0); }
+  clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0); }
   .header__text-box {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.section-our-coffee {
+  background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
+  height: 85vh;
+  margin-top: -10vh; }
