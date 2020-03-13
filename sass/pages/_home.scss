@@ -30,8 +30,6 @@
 }
 
 .section-menu {
-  height: 85vh;
-
   background-image: linear-gradient(
     to bottom,
     rgba($color-grey-light-2, 0.6),
@@ -39,5 +37,5 @@
   );
 
   margin-top: -15vh;
-  padding: 10rem 0;
+  padding: 15rem 0;
 }

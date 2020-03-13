@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes pulsate {
   0% {
     transform: scale(1); }
@@ -190,6 +191,58 @@ body {
     height: 5rem;
     fill: #faf9f9; }
 
+.menu__coffee {
+  display: flex;
+  justify-content: center;
+  color: #512d1f;
+  position: relative; }
+
+.menu__list {
+  margin: 5rem 10rem; }
+  .menu__list::before {
+    content: 'CZARNA';
+    font-size: 8rem;
+    font-weight: 100;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 25%;
+    opacity: 0.1; }
+  .menu__list::after {
+    content: 'BIAŁA';
+    font-size: 8rem;
+    font-weight: 100;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 25%;
+    opacity: 0.1; }
+
+.menu__price {
+  font-size: 3rem;
+  display: flex;
+  text-align: end;
+  margin: 1rem 0 1rem 5rem; }
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0; }
+  .menu__item:not(:last-child) {
+    border-bottom: dotted rgba(124, 76, 42, 0.1) 2px; }
+  .menu__item--name {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 2.5rem; }
+  .menu__item--note {
+    color: #7c4c2a;
+    font-size: 2rem;
+    font-weight: 300; }
+
+.menu__box {
+  display: flex;
+  flex-direction: column; }
+
 .header {
   height: 80vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(to bottom, rgba(81, 45, 31, 0.7), rgba(124, 76, 42, 0.6)), url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
@@ -217,7 +270,6 @@ body {
   background-position: center; }
 
 .section-menu {
-  height: 85vh;
   background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
   margin-top: -15vh;
-  padding: 10rem 0; }
+  padding: 15rem 0; }

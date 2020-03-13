@@ -1,0 +1,68 @@
+.menu {
+  &__coffee {
+    display: flex;
+    justify-content: center;
+    color: $color-primary-dark;
+    position: relative;
+  }
+
+  &__list {
+    margin: 5rem 10rem;
+
+    &::before {
+      content: 'CZARNA';
+      font-size: 8rem;
+      font-weight: 100;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: 0;
+      top: 25%;
+      opacity: 0.1;
+    }
+
+    &::after {
+      content: 'BIAŁA';
+      font-size: 8rem;
+      font-weight: 100;
+      transform: rotate(90deg);
+      position: absolute;
+      right: 0;
+      top: 25%;
+      opacity: 0.1;
+    }
+  }
+
+  &__price {
+    font-size: 3rem;
+    display: flex;
+    text-align: end;
+    margin: 1rem 0 1rem 5rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+    &:not(:last-child) {
+      border-bottom: dotted rgba($color-primary, $alpha: 0.1) 2px;
+    }
+
+    &--name {
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 2.5rem;
+    }
+
+    &--note {
+      color: $color-primary;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+}
