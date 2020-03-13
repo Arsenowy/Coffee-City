@@ -29,8 +29,33 @@ body {
   display: flex;
   flex-direction: column;
 
+  & strong {
+    color: $color-primary;
+    font-weight: 400;
+  }
+
   &--main {
     color: $color-primary-dark;
+    text-align: center;
+    margin: 1rem;
+    font-size: 7rem;
+    font-weight: 700;
+  }
+
+  &--sub {
+    color: $color-primary-dark;
+    text-align: center;
+    margin: 3rem 20rem;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+.heading-tertiary {
+  display: flex;
+  flex-direction: column;
+  color: $color-beige;
+
+  &--main {
     text-align: center;
     margin: 4rem;
     font-size: 7rem;
@@ -38,7 +63,6 @@ body {
   }
 
   &--sub {
-    color: $color-primary-dark;
     text-align: center;
     margin: 1rem 20rem;
     font-size: 3rem;
