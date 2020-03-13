@@ -56,16 +56,16 @@ body {
   color: $color-beige;
 
   &--main {
-    text-align: center;
     margin: 4rem;
     font-size: 7rem;
     font-weight: 700;
+    text-align: center;
   }
 
   &--sub {
-    text-align: center;
-    margin: 1rem 20rem;
+    margin: 1rem 10rem;
     font-size: 3rem;
     font-weight: 300;
+    text-align: center;
   }
 }
