@@ -1,3 +1,23 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1); }
+  7% {
+    transform: scale(1.05); }
+  20% {
+    transform: scale(1); }
+  27% {
+    transform: scale(1.05); }
+  40% {
+    transform: scale(1); }
+  47% {
+    transform: scale(1.05); }
+  60% {
+    transform: scale(1); }
+  93% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -114,24 +134,41 @@ body {
     margin: 0 4rem; }
 
 .feature-box {
-  padding: 15rem 5rem;
+  padding: 15rem;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 10rem; }
+  flex-wrap: wrap; }
   .feature-box__item {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     background-image: radial-gradient(rgba(238, 226, 206, 0.7), rgba(223, 208, 182, 0.6));
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-    box-shadow: 0 0 6rem 2rem rgba(0, 0, 0, 0.2); }
+    margin: 2.5rem;
+    box-shadow: 0 0 6rem 2rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s; }
+    .feature-box__item:hover {
+      animation: pulsate 3s infinite; }
+    .feature-box__item--first {
+      animation: pulsate 4s infinite; }
+    .feature-box__item--first::before {
+      content: 'Click me!';
+      font-family: 'Kaushan Script', cursive;
+      width: 150%;
+      height: auto;
+      position: absolute;
+      top: -6rem;
+      left: -3rem;
+      z-index: 100;
+      font-size: 3rem;
+      color: white;
+      transform: rotate(-15deg); }
   .feature-box__icon {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     fill: #faf9f9; }
 
 .header {
@@ -153,7 +190,7 @@ body {
 
 .section-features {
   -webkit-clip-path: polygon(100% 15vh, 100% 100%, 0 85vh, 0 0, 50% 0);
-  clip-path: polygon(100% 15%, 100% 100%, 0 100%, 0 15%, 50% 0);
+  clip-path: polygon(100% 10vh, 100% 100%, 0 100%, 0 10vh, 50% 0);
   margin-top: -15vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(to bottom, rgba(124, 76, 42, 0.3), rgba(81, 45, 31, 0.3)), url(../img/sample-4.jpg);
   background-size: cover;
