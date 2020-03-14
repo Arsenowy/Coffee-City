@@ -349,11 +349,35 @@
             >stolik dla siebie i bliskich już teraz!</span
           >
         </h2>
-        <div class="booking__box">
-          <div class="booking__date">data</div>
-          <div class="booking__hour">godzina</div>
-          <div class="booking__count">2 osob</div>
+        <div class="booking">
+          <select id="booking__date" name="Date" form="" class="form__select">
+            <option value="today">16.03.2020</option>
+            <option value="next-day-1">17.03.2020</option>
+            <option value="next-day-2">18.03.2020</option>
+            <option value="next-day-3">19.03.2020</option>
+          </select>
+
+          <select id="booking__hour" name="Hour" form="" class="form__select">
+            <option value="hour-1">17:15</option>
+            <option value="hour-2">17:30</option>
+            <option value="hour-3">17:45</option>
+            <option value="hour-4">18:00</option>
+          </select>
+          <select
+            id="booking__quantity"
+            name="quantity"
+            form=""
+            class="form__select"
+          >
+            <option value="1-person">1 osoba</option>
+            <option value="2-people">2 osoby</option>
+            <option value="3-people">3 osoby</option>
+            <option value="4-people">4 osoby</option>
+          </select>
         </div>
+        <footer class="footer">
+          <p>Designed and coded by Mikołaj Krawczyk</p>
+        </footer>
       </section>
     </main>
   </body>

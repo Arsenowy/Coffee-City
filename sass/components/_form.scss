@@ -1,0 +1,24 @@
+.form {
+  &__select {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    font-family: inherit;
+    border: none;
+    color: $color-grey-light-1;
+    display: block;
+    transition: 0.3s all;
+    margin: 6rem;
+    border: $color-beige-dark 1px solid;
+    border-radius: 10px;
+    width: 20rem;
+    letter-spacing: 1px;
+
+    &:focus {
+      outline: none;
+      color: $color-beige;
+      transform: translateY(-1px);
+      font-size: 1.6rem;
+    }
+  }
+}
