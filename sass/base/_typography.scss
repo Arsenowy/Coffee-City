@@ -48,6 +48,13 @@ body {
     margin: 3rem 20rem;
     font-size: 3rem;
     font-weight: 300;
+
+    &-big {
+      color: $color-primary-dark;
+      font-size: 5rem;
+      font-weight: 400;
+      text-align: center;
+    }
   }
 }
 .heading-tertiary {
@@ -60,12 +67,19 @@ body {
     font-size: 7rem;
     font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &--sub {
-    margin: 1rem 10rem;
+    margin: 0 10rem;
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
+
+    &-big {
+      font-size: 5rem;
+      font-weight: 300;
+      text-align: center;
+    }
   }
 }

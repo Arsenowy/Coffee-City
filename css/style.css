@@ -77,6 +77,11 @@ body {
     margin: 3rem 20rem;
     font-size: 3rem;
     font-weight: 300; }
+    .heading-secondary--sub-big {
+      color: #512d1f;
+      font-size: 5rem;
+      font-weight: 400;
+      text-align: center; }
 
 .heading-tertiary {
   display: flex;
@@ -86,12 +91,17 @@ body {
     margin: 4rem;
     font-size: 7rem;
     font-weight: 700;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   .heading-tertiary--sub {
-    margin: 1rem 10rem;
+    margin: 0 10rem;
     font-size: 3rem;
     font-weight: 300;
     text-align: center; }
+    .heading-tertiary--sub-big {
+      font-size: 5rem;
+      font-weight: 300;
+      text-align: center; }
 
 .u-center-text {
   text-align: center !important; }
@@ -363,7 +373,7 @@ body {
   padding: 20rem 0 30rem; }
 
 .section-menu-cake {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), linear-gradient(to bottom, rgba(124, 76, 42, 0.9), rgba(81, 45, 31, 0.8)), url(../img/sample-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), linear-gradient(to bottom, rgba(124, 76, 42, 0.9), rgba(81, 45, 31, 0.8)), url(../img/sample-1.jpg);
   background-size: cover;
   background-position: center;
   -webkit-clip-path: polygon(100% 10vh, 100% 100%, 0 100%, 0 10vh, 50% 0);
@@ -375,3 +385,13 @@ body {
   background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
   margin-top: -15vh;
   padding: 15rem 0 30rem; }
+
+.section-booking {
+  height: 85vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), linear-gradient(to bottom, rgba(124, 76, 42, 0.5), rgba(81, 45, 31, 0.2)), url(../img/sample-2.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(100% 10vh, 100% 100%, 0 100%, 0 10vh, 50% 0);
+  clip-path: polygon(100% 10vh, 100% 100%, 0 100%, 0 10vh, 50% 0);
+  margin-top: -15vh;
+  padding: 10rem 20rem 30rem; }
