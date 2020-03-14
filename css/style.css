@@ -34,9 +34,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 80%; } }
 
 body {
   box-sizing: border-box;
@@ -197,9 +194,6 @@ body {
   color: #512d1f;
   position: relative; }
 
-.menu__cake {
-  filter: blur(5px); }
-
 .menu__list {
   margin: 5rem 10rem; }
   .menu__list::before {
@@ -245,6 +239,98 @@ body {
   display: flex;
   flex-direction: column; }
 
+.section-menu-cake .menu__item--note {
+  color: #dfd0b6;
+  filter: brightness(70%); }
+
+.localization {
+  display: flex;
+  flex-direction: column; }
+  .localization__box {
+    display: flex;
+    justify-content: center;
+    padding: 4rem; }
+  .localization__photo {
+    margin: 0 3rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+    position: relative; }
+    .localization__photo:hover .localization__map--icon-2 {
+      visibility: visible;
+      opacity: 1; }
+    .localization__photo:hover > .localization__img {
+      filter: brightness(70%); }
+  .localization__img {
+    width: 100rem;
+    height: auto;
+    transition: all 0.5s;
+    display: block; }
+  .localization__paragraph {
+    color: #7c4c2a;
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 4rem;
+    display: flex;
+    justify-content: center; }
+  .localization__map {
+    position: relative;
+    margin: 0 5rem;
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1); }
+    .localization__map:hover > .localization__map--text {
+      transform: translateY(-50vh);
+      opacity: 0; }
+    .localization__map:hover > .localization__map--icon-1 {
+      transform: translateY(50vh);
+      opacity: 0; }
+    .localization__map:hover > .localization__map--icon-2 {
+      visibility: visible;
+      opacity: 1; }
+    .localization__map:hover::before {
+      filter: blur(0) brightness(80%);
+      cursor: pointer; }
+    .localization__map::before {
+      background-image: url(../img/map.jpg);
+      background-size: cover;
+      background-position: bottom;
+      filter: blur(3px);
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: ease-in-out all 0.3s; }
+    .localization__map--icon-1 {
+      position: relative;
+      top: 0;
+      left: 0;
+      fill: #512d1f;
+      transition: all 0.4s; }
+    .localization__map--icon-2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      fill: #ffffff;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      cursor: pointer; }
+    .localization__map--text {
+      position: relative;
+      font-size: 5rem;
+      font-weight: 700;
+      color: #7c4c2a;
+      transition: ease-out all 0.5s;
+      overflow: hidden; }
+
 .header {
   height: 80vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(to bottom, rgba(81, 45, 31, 0.7), rgba(124, 76, 42, 0.6)), url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
@@ -284,3 +370,8 @@ body {
   clip-path: polygon(100% 10vh, 100% 100%, 50% 85%, 0 100%, 0 10vh, 50% 0);
   margin-top: -15vh;
   padding: 10rem 20rem 30rem; }
+
+.section-about {
+  background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
+  margin-top: -15vh;
+  padding: 15rem 0 30rem; }

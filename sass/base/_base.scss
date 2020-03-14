@@ -9,16 +9,13 @@
 html {
   font-size: 62.5%; // 10px/16px = 62.5%
 
-  @include respond (tab-land){
-    font-size: 56.25%;  //1 rem = 9px
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9px
   }
 
-  @include respond (tab-port){  //tab-port or smaller like a phone
+  @include respond(tab-port) {
+    //tab-port or smaller like a phone
     font-size: 50%; //1 rem = 8px
-  }
-
-  @include respond (big-desktop){
-    font-size: 80%; //1 rem = 12px
   }
 }
 body {

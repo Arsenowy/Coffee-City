@@ -61,3 +61,14 @@
   margin-top: -15vh;
   padding: 10rem 20rem 30rem;
 }
+
+.section-about {
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-grey-light-2, 0.6),
+    rgba($color-grey-light-1, 1)
+  );
+
+  margin-top: -15vh;
+  padding: 15rem 0 30rem;
+}

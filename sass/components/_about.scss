@@ -1,0 +1,109 @@
+.localization {
+  display: flex;
+  flex-direction: column;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  &__photo {
+    margin: 0 3rem;
+    box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.15);
+    transition: all 0.3s;
+    position: relative;
+
+    &:hover .localization__map--icon-2 {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover > .localization__img {
+      filter: brightness(70%);
+    }
+  }
+  &__img {
+    width: 100rem;
+    height: auto;
+    transition: all 0.5s;
+    display: block;
+  }
+
+  &__paragraph {
+    color: $color-primary;
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__map {
+    position: relative;
+    margin: 0 5rem;
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.1);
+
+    &:hover > &--text {
+      transform: translateY(-50vh);
+      opacity: 0;
+    }
+    &:hover > &--icon-1 {
+      transform: translateY(50vh);
+      opacity: 0;
+    }
+    &:hover > &--icon-2 {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover::before {
+      filter: blur(0) brightness(80%);
+      cursor: pointer;
+    }
+
+    &::before {
+      background-image: url(../img/map.jpg);
+      background-size: cover;
+      background-position: bottom;
+      filter: blur(3px);
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: ease-in-out all 0.3s;
+    }
+
+    &--icon-1 {
+      position: relative;
+      top: 0;
+      left: 0;
+      fill: $color-primary-dark;
+      transition: all 0.4s;
+    }
+    &--icon-2 {
+      @include centering;
+      z-index: 5;
+      fill: #ffffff;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    &--text {
+      position: relative;
+      font-size: 5rem;
+      font-weight: 700;
+      color: $color-primary;
+      transition: ease-out all 0.5s;
+      overflow: hidden;
+    }
+  }
+}
