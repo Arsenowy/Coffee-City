@@ -525,6 +525,54 @@ body {
     .footer {
       font-size: 1.4rem; } }
 
+.navbar__list {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20; }
+  @media only screen and (max-width: 1820px) {
+    .navbar__list {
+      top: 8rem;
+      width: 95%; } }
+  @media only screen and (max-width: 56.25em) {
+    .navbar__list {
+      display: none; } }
+
+.navbar__item {
+  margin: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: all 0.4s;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 2rem;
+  font-size: 2.8rem; }
+  @media only screen and (max-width: 1820px) {
+    .navbar__item {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 1450px) {
+    .navbar__item {
+      font-size: 1.8rem;
+      padding: 2rem 1rem;
+      margin: 1rem; } }
+  .navbar__item:link, .navbar__item:visited {
+    color: white;
+    text-decoration: none; }
+  .navbar__item:hover {
+    font-size: 3.8rem;
+    opacity: 0.9; }
+    @media only screen and (max-width: 1820px) {
+      .navbar__item:hover {
+        font-size: 2.8rem; } }
+    @media only screen and (max-width: 1450px) {
+      .navbar__item:hover {
+        font-size: 2.4rem; } }
+
 .section-our-coffee {
   background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
   margin-top: -10vh;

@@ -1,0 +1,63 @@
+.navbar {
+  &__list {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+
+    @media only screen and (max-width: 1820px) {
+      top: 8rem;
+      width: 95%;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all 0.4s;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 2rem;
+    font-size: 2.8rem;
+
+    @media only screen and (max-width: 1820px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 1450px) {
+      font-size: 1.8rem;
+      padding: 2rem 1rem;
+      margin: 1rem;
+    }
+
+    &:link,
+    &:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:hover {
+      font-size: 3.8rem;
+      opacity: 0.9;
+
+      @media only screen and (max-width: 1820px) {
+        font-size: 2.8rem;
+      }
+
+      @media only screen and (max-width: 1450px) {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
