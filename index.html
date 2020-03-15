@@ -14,7 +14,8 @@
       type="image/png"
       href="https://cdn.website.dish.co/static/1584008249352/static/icons/favicons/cafe.ico"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Coffee City &mdash; Więcej niż kawiarnia</title>
   </head>
   <body>
@@ -38,7 +39,7 @@
             <span class="heading-secondary--main"
               >Kawa palona po wiedeńsku</span
             >
-            <span class="heading-secondary--sub"
+            <span data-aos="fade-down" class="heading-secondary--sub"
               >Dzięki mocnemu paleniu zredukowana jest naturalna kwasowość
               ziaren kawy, a na pierwszy plan wysuwają się nuty czekolady i
               orzechów. Nasze specjały podoba się tym, którzy lubią duże czarne
@@ -90,8 +91,10 @@
           </svg>
         </div>
         <h2 class="heading-tertiary">
-          <span class="heading-tertiary--main">lorem ipsum</span>
-          <span class="heading-tertiary--sub"
+          <span data-aos="fade-up" class="heading-tertiary--main"
+            >lorem ipsum</span
+          >
+          <span data-aos="fade-up" class="heading-tertiary--sub"
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             mollitia consequatur quam, voluptatum exercitationem reprehenderit
             beatae accusantium quod eius! Rerum tempora, placeat a quae porro in
@@ -101,9 +104,9 @@
       </section>
       <section class="section-menu-coffee">
         <h2 class="heading-secondary">
-          <span class="heading-secondary--main">KAWY</span>
+          <span data-aos="fade-up" class="heading-secondary--main">KAWY</span>
 
-          <span class="heading-secondary--sub"
+          <span data-aos="fade-up" class="heading-secondary--sub"
             ><strong>Specjalnie wyselekcjonowane </strong>ziarna kawy, prosto z
             <strong>Polskiej Palarni Kawy</strong>
             gwarantują doskonały czekoladowy smak. Nasza kawa to
@@ -112,7 +115,7 @@
           /></span>
         </h2>
 
-        <div class="menu__coffee">
+        <div data-aos="fade-down" class="menu__coffee">
           <ul class="menu__list">
             <li class="menu__item">
               <div class="menu__box">
@@ -238,7 +241,7 @@
         </div>
       </section>
       <section class="section-menu-cake">
-        <h2 class="heading-tertiary">
+        <h2 data-aos="fade-up" class="heading-tertiary">
           <span class="heading-tertiary--main">CIASTA</span>
 
           <span class="heading-tertiary--sub"
@@ -246,7 +249,7 @@
             składników. <br />Pieczone z sercem według własnych receptur.
           </span>
         </h2>
-        <ul class="menu__list">
+        <ul data-aos="fade-down" class="menu__list">
           <li class="menu__item">
             <div class="menu__box">
               <div class="menu__item--name">Szarlotka</div>
@@ -296,7 +299,7 @@
         </ul>
       </section>
       <section class="section-about">
-        <h2 class="heading-secondary">
+        <h2 data-aos="fade-up" class="heading-secondary">
           <span class="heading-secondary--main">Lokalizacja</span>
           <span class="heading-secondary--sub">
             <strong>
@@ -305,7 +308,7 @@
             >
           </span>
         </h2>
-        <div class="localization">
+        <div data-aos="fade-down" class="localization">
           <div class="localization__box">
             <div class="localization__photo">
               <div class="localization__img"></div>
@@ -338,13 +341,13 @@
         </div>
       </section>
       <section class="section-booking">
-        <h2 class="heading-tertiary">
+        <h2 data-aos="fade-up" class="heading-tertiary">
           <span class="heading-tertiary--main">ZAREZERWUJ</span>
           <span class="heading-tertiary--sub-big"
             >stolik dla siebie i bliskich już teraz!</span
           >
         </h2>
-        <div class="booking">
+        <div data-aos="fade-down" class="booking">
           <select id="booking__date" name="Date" form="" class="form__select">
             <option value="today">16.03.2020</option>
             <option value="next-day-1">17.03.2020</option>
@@ -375,15 +378,13 @@
         </footer>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1200,
+        delay: 200
+      });
+    </script>
   </body>
 </html>
-<!-- <span class="heading-secondary--sub"
-            ><strong>Wyjątkowe mieszanki herbat</strong>, które trafią do gustu
-            każdego miłośnika herbat. <br
-          /></span>
-          <span class="heading-secondary--sub"
-            ><strong>Świeżo wyciskane soki</strong> oparte na
-            <strong>autorskich recepturach.</span -->
-<!-- <span class="heading-secondary--sub"
-            >Zarezerwuj stolik już teraz! U nas poczujesz się jak u
-            siebie.</span> -->
