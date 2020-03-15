@@ -12,14 +12,37 @@
     ),
     url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
   background-size: cover;
+  background-position: center;
 
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+
+  @include respond(tab-port) {
+  }
+
+  @include respond(shape) {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  @include respond(phone) {
+    height: 60vh;
+  }
+
+  @media only screen and (max-width: 350px) {
+    height: 50vh;
+  }
 
   &__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
+    width: 80%;
+    max-width: 850px;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      top: 30%;
+    }
   }
 }

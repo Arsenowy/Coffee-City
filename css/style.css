@@ -57,11 +57,24 @@ body {
   .heading-primary--main {
     font-size: 10rem;
     text-transform: uppercase;
-    flex: 0 0 100%;
-    width: 100%; }
+    text-align: center;
+    line-height: 1.25; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 8rem;
+        margin: 2rem 0; } }
   .heading-primary--sub {
     font-size: 5rem;
     text-align: right; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 2.5rem;
+        font-family: 'Lato';
+        font-weight: 100;
+        text-transform: uppercase; } }
+    @media only screen and (max-width: 350px) {
+      .heading-primary--sub {
+        display: none; } }
 
 .heading-secondary {
   display: flex;
@@ -77,6 +90,12 @@ body {
     margin: 1rem;
     font-size: 7rem;
     font-weight: 700; }
+    @media only screen and (max-width: 56.25em) {
+      .heading-secondary--main {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-secondary--main {
+        font-size: 5rem; } }
   .heading-secondary--sub {
     color: #512d1f;
     text-align: center;
@@ -90,7 +109,8 @@ body {
         margin: 3rem 10rem; } }
     @media only screen and (max-width: 56.25em) {
       .heading-secondary--sub {
-        margin: 3rem; } }
+        margin: 3rem;
+        font-size: 2.5rem; } }
     .heading-secondary--sub-big {
       color: #512d1f;
       font-size: 5rem;
@@ -125,10 +145,7 @@ body {
         margin: 0 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .heading-tertiary--sub {
-        margin: 0 3rem; } }
-    @media only screen and (max-width: 75em) {
-      .heading-tertiary--sub {
-        margin: 0 3rem; } }
+        font-size: 2.5rem; } }
     .heading-tertiary--sub-big {
       font-size: 5rem;
       font-weight: 300;
@@ -173,11 +190,14 @@ body {
   margin-top: 1rem !important; }
 
 .our-coffee__about {
-  padding: 5rem 5rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .our-coffee__about {
+      padding: 5rem 0rem; } }
 
 .our-coffee__logo {
   width: 20rem;
@@ -282,10 +302,16 @@ body {
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .menu__item--name {
+        font-size: 2.1rem; } }
   .menu__item--note {
     color: #7c4c2a;
     font-size: 2rem;
     font-weight: 300; }
+    @media only screen and (max-width: 37.5em) {
+      .menu__item--note {
+        font-size: 1.8rem; } }
 
 .menu__box {
   display: flex;
@@ -365,7 +391,7 @@ body {
       filter: blur(0) brightness(80%);
       cursor: pointer; }
     .localization__map::before {
-      background-image: url(../img/map.jpg);
+      background-image: url(../img/l-map.jpg);
       background-size: cover;
       background-position: bottom;
       filter: blur(3px);
@@ -436,13 +462,29 @@ body {
   height: 80vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(to bottom, rgba(81, 45, 31, 0.7), rgba(124, 76, 42, 0.6)), url(https://cdn.website.dish.co/media/c3/cf/828238/Coffee-City-27983512-683420318668760-5376203394461977088-o.jpg);
   background-size: cover;
+  background-position: center;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0); }
+  @media only screen and (max-width: 46.875em) {
+    .header {
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 60vh; } }
+  @media only screen and (max-width: 350px) {
+    .header {
+      height: 50vh; } }
   .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
+    width: 80%;
+    max-width: 850px;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 37.5em) {
+      .header__text-box {
+        top: 30%; } }
 
 .footer {
   position: absolute;
@@ -466,6 +508,9 @@ body {
   background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
   margin-top: -10vh;
   padding: 10rem 0 30rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-our-coffee {
+      padding: 10rem 0 20rem; } }
 
 .section-features {
   -webkit-clip-path: polygon(100% 10vh, 100% 100%, 0 100%, 0 10vh, 50% 0);
@@ -479,6 +524,13 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 46.875em) {
+    .section-features {
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .section-features {
+      padding: 10rem 0; } }
 
 .section-menu-coffee {
   background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
@@ -487,6 +539,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 46.875em) {
+    .section-menu-coffee {
+      margin: 0;
+      padding: 10rem 0 30rem; } }
 
 .section-menu-cake {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), linear-gradient(to bottom, rgba(124, 76, 42, 0.9), rgba(81, 45, 31, 0.8)), url(../img/sample-1.jpg);
@@ -501,11 +557,22 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-menu-cake {
       padding: 10rem 5rem; } }
+  @media only screen and (max-width: 46.875em) {
+    .section-menu-cake {
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .section-menu-cake {
+      padding: 7rem 0; } }
 
 .section-about {
   background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), #faf9f9);
   margin-top: -15vh;
   padding: 15rem 0 30rem; }
+  @media only screen and (max-width: 46.875em) {
+    .section-about {
+      margin-top: 0;
+      padding: 10rem 0 30rem; } }
 
 .section-booking {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), linear-gradient(to bottom, rgba(124, 76, 42, 0.5), rgba(81, 45, 31, 0.4)), url(../img/sample-2.jpg);
@@ -519,6 +586,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-booking {
       padding: 10rem 5rem; } }
+  @media only screen and (max-width: 46.875em) {
+    .section-booking {
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); } }
   @media only screen and (max-width: 37.5em) {
     .section-booking {
       padding: 10rem 2rem; } }
