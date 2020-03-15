@@ -1,24 +1,27 @@
 .form {
   &__select {
     font-size: 1.5rem;
-    padding: 1.5rem;
+    padding: 2rem 3rem;
     background-color: transparent;
     font-family: inherit;
     border: none;
     color: $color-grey-light-1;
     display: block;
     transition: 0.3s all;
-    margin: 6rem;
+    margin: 6rem 4rem;
     border: $color-beige-dark 1px solid;
     border-radius: 10px;
-    width: 20rem;
+    width: 30rem;
     letter-spacing: 1px;
+    align-self: center;
 
-    &:focus {
-      outline: none;
-      color: $color-beige;
-      transform: translateY(-1px);
-      font-size: 1.6rem;
+    @include respond(tab-land) {
+      margin: 2rem;
     }
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-beige;
   }
 }

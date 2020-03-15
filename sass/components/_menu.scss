@@ -4,10 +4,15 @@
     justify-content: center;
     color: $color-primary-dark;
     position: relative;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__list {
     margin: 5rem 10rem;
+    align-self: center;
 
     &::before {
       content: 'CZARNA';

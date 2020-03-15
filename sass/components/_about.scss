@@ -10,6 +10,10 @@
 
   &__photo {
     margin: 0 3rem;
+    flex-basis: 70%;
+    height: 50rem;
+    max-width: 800px;
+
     box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.15);
     transition: all 0.3s;
     position: relative;
@@ -21,12 +25,17 @@
     &:hover > .localization__img {
       filter: brightness(70%);
     }
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
   &__img {
-    width: 100rem;
-    height: auto;
-    transition: all 0.5s;
-    display: block;
+    background-image: url(https://scontent.fktw1-1.fna.fbcdn.net/v/t31.0-8/30420701_731643797179745_4974108034297925655_o.jpg?_nc_cat=100&_nc_sid=dd9801&_nc_ohc=l2o7gTPqiO0AX8Ty0S0&_nc_ht=scontent.fktw1-1.fna&oh=65a47c93c7b3bd4f3f9975f49d7734df&oe=5E919E39);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   &__paragraph {
@@ -34,20 +43,33 @@
     font-size: 4rem;
     font-weight: 300;
     margin: 4rem;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+
+    @include respond(phone) {
+      margin: 4rem 2rem;
+      font-size: 3rem;
+    }
   }
 
   &__map {
     position: relative;
     margin: 0 5rem;
     flex: 0 0 20%;
+    max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.1);
+
+    @include respond(tab-port) {
+      height: 400px;
+      flex: 0 0 40%;
+    }
+    @include respond(phone) {
+      flex: 0 0 100%;
+    }
 
     &:hover > &--text {
       transform: translateY(-50vh);
@@ -99,7 +121,7 @@
 
     &--text {
       position: relative;
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 700;
       color: $color-primary;
       transition: ease-out all 0.5s;

@@ -1,4 +1,9 @@
 .booking {
   display: flex;
   justify-content: center;
+  margin: 4rem 0;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
