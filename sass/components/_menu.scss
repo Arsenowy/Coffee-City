@@ -20,9 +20,13 @@
       font-weight: 100;
       transform: rotate(-90deg);
       position: absolute;
-      left: 0;
+      left: -5%;
       top: 25%;
       opacity: 0.1;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &::after {
@@ -34,6 +38,10 @@
       right: 0;
       top: 25%;
       opacity: 0.1;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 
