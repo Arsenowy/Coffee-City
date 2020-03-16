@@ -14,35 +14,35 @@
     margin: 5rem 10rem;
     align-self: center;
 
-    &::before {
-      content: 'CZARNA';
-      font-size: 8rem;
-      font-weight: 100;
-      transform: rotate(-90deg);
-      position: absolute;
-      left: -5%;
-      top: 25%;
-      opacity: 0.1;
+    // &::before {
+    //   content: 'CZARNA';
+    //   font-size: 8rem;
+    //   font-weight: 100;
+    //   transform: rotate(-90deg);
+    //   position: absolute;
+    //   left: -5%;
+    //   top: 25%;
+    //   opacity: 0.1;
 
-      @include respond(phone) {
-        display: none;
-      }
-    }
+    //   @media only screen and (max-width: 1550px) {
+    //     display: none;
+    //   }
+    // }
 
-    &::after {
-      content: 'BIAŁA';
-      font-size: 8rem;
-      font-weight: 100;
-      transform: rotate(90deg);
-      position: absolute;
-      right: 0;
-      top: 25%;
-      opacity: 0.1;
+    // &::after {
+    //   content: 'BIAŁA';
+    //   font-size: 8rem;
+    //   font-weight: 100;
+    //   transform: rotate(90deg);
+    //   position: absolute;
+    //   right: 0;
+    //   top: 25%;
+    //   opacity: 0.1;
 
-      @include respond(phone) {
-        display: none;
-      }
-    }
+    //   @media only screen and (max-width: 1550px) {
+    //     display: none;
+    //   }
+    // }
   }
 
   &__price {

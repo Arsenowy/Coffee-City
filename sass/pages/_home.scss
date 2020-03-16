@@ -88,8 +88,23 @@
   background-size: cover;
   background-position: center;
 
-  -webkit-clip-path: polygon(100% 10vh, 100% 100%, 0 100%, 0 10vh, 50% 0);
-  clip-path: polygon(100% 10vh, 100% 100%, 50% 85%, 0 100%, 0 10vh, 50% 0);
+  -webkit-clip-path: polygon(
+    100% 10vh,
+    100% 100%,
+    50% 90%,
+    0 100%,
+    0 10vh,
+    50% 0
+  );
+  -webkit-clip-path: polygon(
+    100% 10%,
+    100% 100%,
+    50% 90%,
+    0 100%,
+    0 10%,
+    50% 0
+  );
+  clip-path: polygon(100% 10%, 100% 100%, 50% 90%, 0 100%, 0 10%, 50% 0);
   margin-top: -15vh;
   padding: 10rem 2rem 30rem;
 
