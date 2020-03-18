@@ -1,9 +1,11 @@
 .navbar {
   &__list {
     width: 90%;
-    display: flex;
-    justify-content: center;
     list-style: none;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, max-content);
 
     position: absolute;
     top: 6rem;
